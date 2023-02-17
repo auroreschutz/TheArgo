@@ -1,0 +1,135 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: "Gill Sans", sans-serif;
+  color: #333;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+ul {
+  background: #283b63;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: goldenrod;
+}
+
+header {
+  text-align: center;
+}
+
+#welcome {
+  height: 400px;
+  background-image: url("assets/ship-at-sea.jpg");
+  background-size: cover;
+}
+
+h1 {
+  font-size: 54px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px #333;
+  text-align: center;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  text-shadow: 0 0 10px #edf1fd, 0 0 20px #edf1fd !important ;
+}
+
+h2 {
+  font-size: 30px;
+  color: #283b63;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#heroes .flex-container div {
+  /* Set heroes columns to equal width */
+  flex: 1 1 0;
+}
+
+form {
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 20px;
+}
+
+label {
+  line-height: 2;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background: #283b63;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+table {
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border: 2px solid #283b63;
+  padding: 10px;
+}
+
+td {
+  border: 2px solid #283b63;
+  padding: 5px;
+}
+
+.hero {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #283b63;
+  color: goldenrod;
+  text-align: center;
+  font-size: small;
+  padding: 2px;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
